@@ -11,6 +11,6 @@ module.exports = {
     ecmaVersion: 12,
   },
   rules: {
-    'require-jsdoc': 'off'
+    'require-jsdoc': 'off',
   },
 };
