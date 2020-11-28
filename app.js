@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser('0b649762-66c1-45b1-9830-549506523722'));
+app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
