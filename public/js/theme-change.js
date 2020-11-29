@@ -1,6 +1,6 @@
 function themeChangeHandler(event) {
   const theme = event.target.value;
-  localStorage.setItem('preferredTheme', theme);
+  sessionStorage.setItem('preferredTheme', theme);
   applyTheme();
 }
 
