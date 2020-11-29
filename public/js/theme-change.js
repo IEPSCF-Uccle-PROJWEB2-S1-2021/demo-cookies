@@ -5,4 +5,6 @@ function themeChangeHandler(event) {
 }
 
 const buttons = document.querySelectorAll('form#themeForm > button');
-buttons.forEach((button) => button.addEventListener('click', themeChangeHandler));
+buttons.forEach((button) =>
+  button.addEventListener('click', themeChangeHandler)
+);
