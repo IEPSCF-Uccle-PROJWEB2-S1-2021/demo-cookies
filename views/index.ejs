@@ -6,13 +6,14 @@
   <p>Your preferred theme is <em><%= theme %></em>.</p>
 
   <p>Choose your theme using one of the button below</p>
-  <form action="/theme" method="POST">
+  <form id="themeForm">
     <button type="submit" name="flavor" value="light" class="btn btn-light text-dark">Light</button>
     <button type="submit" name="flavor" value="dark" class="btn btn-dark text-white">Dark</button>
     <button type="submit" name="flavor" value="green" class="btn btn-success text-white">Green</button>
     <button type="submit" name="flavor" value="blue" class="btn btn-info text-dark">Blue</button>
     <button type="submit" name="flavor" value="yellow" class="btn btn-warning text-dark">Blue</button>
   </form>
+  <script src="/js/theme-change.js" defer></script>
   <p><a href="/anotherPage">Go to another page</a></p>
 </div>
 
