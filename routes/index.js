@@ -3,12 +3,12 @@ const router = new express.Router();
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
-  const themeFlavor = req.cookies.theme || 'light';
+  const themeFlavor = req.cookies.theme;
   res.render('index', { title: 'Express', theme: themeFlavor });
 });
 
 router.get('/anotherPage', (req, res, next) => {
-  const themeFlavor = req.cookies.theme || 'light';
+  const themeFlavor = req.cookies.theme;
   res.render('anotherPage', { title: 'Another webpage', theme: themeFlavor });
 });
 
