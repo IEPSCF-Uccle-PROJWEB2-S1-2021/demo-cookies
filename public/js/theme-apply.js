@@ -1,7 +1,7 @@
 const body = document.body;
 
 function applyTheme() {
-  const theme = localStorage.getItem('preferredTheme') || 'light';
+  const theme = sessionStorage.getItem('preferredTheme') || 'light';
   let themeClass = '';
   switch (theme) {
     case 'dark':
