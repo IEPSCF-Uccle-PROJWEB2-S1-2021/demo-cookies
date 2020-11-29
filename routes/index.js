@@ -14,7 +14,11 @@ router.get('/anotherPage', (req, res, next) => {
 
 router.post('/theme', (req, res, next) => {
   const themeFlavor = req.body.flavor;
-  res.cookie('theme', themeFlavor, { maxAge: 24 * 60 * 60 * 1000, httpOnly: true, sameSite: 'Strict' });
+  res.cookie('theme', themeFlavor, {
+    maxAge: 24 * 60 * 60 * 1000,
+    httpOnly: true,
+    sameSite: 'Strict',
+  });
   res.redirect('/');
 });
 
