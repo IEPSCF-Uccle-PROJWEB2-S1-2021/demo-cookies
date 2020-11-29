@@ -12,10 +12,12 @@ router.get('/anotherPage', (req, res, next) => {
   res.render('anotherPage', { title: 'Another webpage', theme: themeFlavor });
 });
 
+const DAY_AS_MS = 24 * 60 * 60 * 1000;
+
 router.post('/theme', (req, res, next) => {
   const themeFlavor = req.body.flavor;
   res.cookie('theme', themeFlavor, {
-    maxAge: 24 * 60 * 60 * 1000,
+    maxAge: 100 * DAY_AS_MS,
     httpOnly: true,
     sameSite: 'Strict',
   });
